@@ -1,5 +1,16 @@
 namespace VCRC;
 
+/// <summary>
+/// Economizer.
+/// </summary>
+public interface IEconomizer : IAuxiliaryHeatExchanger
+{
+    /// <summary>
+    /// Superheat.
+    /// </summary>
+    TemperatureDelta Superheat { get; }
+}
+
 /// <inheritdoc cref="IEconomizer" />
 public record Economizer : EconomizerWithTPI, IEconomizer
 {

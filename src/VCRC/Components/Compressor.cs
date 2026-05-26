@@ -1,5 +1,16 @@
 namespace VCRC;
 
+/// <summary>
+/// Compressor.
+/// </summary>
+public interface ICompressor
+{
+    /// <summary>
+    /// Isentropic efficiency.
+    /// </summary>
+    Ratio Efficiency { get; }
+}
+
 /// <inheritdoc cref="ICompressor" />
 public record Compressor : ICompressor
 {

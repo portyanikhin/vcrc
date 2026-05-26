@@ -2,6 +2,11 @@ using UnitsNet.NumberExtensions.NumberToTemperature;
 
 namespace VCRC;
 
+internal interface IEntropyAnalyzer
+{
+    IEntropyAnalysisResult PerformAnalysis(Temperature indoor, Temperature outdoor);
+}
+
 internal sealed class EntropyAnalyzer(
     IVCRC cycle,
     IEvaporatorNode evaporatorNode,

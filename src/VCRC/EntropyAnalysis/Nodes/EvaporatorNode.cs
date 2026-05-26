@@ -1,5 +1,10 @@
 namespace VCRC;
 
+internal interface IEvaporatorNode : IMainHeatExchangerNode
+{
+    SpecificEnergy CalculateEnergyLoss(Temperature coldSource, Temperature hotSource);
+}
+
 internal sealed class EvaporatorNode(
     Ratio specificMassFlow,
     IRefrigerant inlet,

@@ -1,5 +1,7 @@
 namespace VCRC;
 
+internal interface IHeatReleaserNode : IMainHeatExchangerNode, IEntropyAnalysisNode;
+
 internal sealed class HeatReleaserNode(
     Ratio specificMassFlow,
     IRefrigerant isentropicInlet,
