@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Description>Cross-platform vapor-compression refrigeration cycles analysis tool</Description>
-    <NoWarn>$(NoWarn);1591;CA1859</NoWarn>
-    <Summary>Cross-platform vapor-compression refrigeration cycles analysis tool</Summary>
+    <Description>Vapor-compression refrigeration cycles analysis tool</Description>
+    <NoWarn>$(NoWarn);1591;CA1859;IDE0130</NoWarn>
+    <Summary>Vapor-compression refrigeration cycles analysis tool</Summary>
     <Title>VCRC</Title>
   </PropertyGroup>
   <ItemGroup>
