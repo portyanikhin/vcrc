@@ -1,12 +1,12 @@
 ﻿namespace VCRC;
 
 /// <summary>
-///     VCRC, which includes a recuperator.
+/// VCRC, which includes a recuperator.
 /// </summary>
 public interface IHaveRecuperator
 {
     /// <summary>
-    ///     Recuperator.
+    /// Recuperator.
     /// </summary>
     IAuxiliaryHeatExchanger Recuperator { get; }
 }

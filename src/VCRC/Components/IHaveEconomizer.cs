@@ -1,12 +1,12 @@
 ﻿namespace VCRC;
 
 /// <summary>
-///     VCRC, which includes an economizer.
+/// VCRC, which includes an economizer.
 /// </summary>
 public interface IHaveEconomizer
 {
     /// <summary>
-    ///     Economizer.
+    /// Economizer.
     /// </summary>
     IEconomizer Economizer { get; }
 }

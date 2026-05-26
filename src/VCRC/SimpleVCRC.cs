@@ -1,15 +1,15 @@
 ﻿namespace VCRC;
 
-/// <inheritdoc cref="ISimpleVCRC"/>
+/// <inheritdoc cref="ISimpleVCRC" />
 public class SimpleVCRC : AbstractVCRC, ISimpleVCRC
 {
-    /// <inheritdoc cref="SimpleVCRC"/>
+    /// <inheritdoc cref="SimpleVCRC" />
     /// <param name="evaporator">Evaporator.</param>
     /// <param name="compressor">Compressor.</param>
     /// <param name="heatReleaser">Condenser or gas cooler.</param>
     /// <exception cref="ValidationException">Only one refrigerant should be selected!</exception>
     /// <exception cref="ValidationException">
-    ///     Condensing temperature should be greater than evaporating temperature!
+    /// Condensing temperature should be greater than evaporating temperature!
     /// </exception>
     public SimpleVCRC(IEvaporator evaporator, ICompressor compressor, IHeatReleaser heatReleaser)
         : base(evaporator, compressor, heatReleaser)

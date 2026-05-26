@@ -1,21 +1,21 @@
 ﻿namespace VCRC;
 
-/// <inheritdoc cref="IVCRCWithEjector"/>
+/// <inheritdoc cref="IVCRCWithEjector" />
 public class VCRCWithEjector : AbstractVCRC, IVCRCWithEjector
 {
     private readonly IEjectorFlows _ejectorFlows;
 
-    /// <inheritdoc cref="VCRCWithEjector"/>
+    /// <inheritdoc cref="VCRCWithEjector" />
     /// <param name="evaporator">Evaporator.</param>
     /// <param name="compressor">Compressor.</param>
     /// <param name="heatReleaser">Condenser or gas cooler.</param>
     /// <param name="ejector">Ejector.</param>
     /// <exception cref="ValidationException">Only one refrigerant should be selected!</exception>
     /// <exception cref="ValidationException">
-    ///     Condensing temperature should be greater than evaporating temperature!
+    /// Condensing temperature should be greater than evaporating temperature!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Refrigerant should be a single component or an azeotropic blend!
+    /// Refrigerant should be a single component or an azeotropic blend!
     /// </exception>
     public VCRCWithEjector(
         IEvaporator evaporator,

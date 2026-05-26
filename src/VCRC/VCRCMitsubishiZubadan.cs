@@ -1,9 +1,9 @@
 ﻿namespace VCRC;
 
-/// <inheritdoc cref="IVCRCMitsubishiZubadan"/>
+/// <inheritdoc cref="IVCRCMitsubishiZubadan" />
 public class VCRCMitsubishiZubadan : AbstractTwoStageVCRC, IVCRCMitsubishiZubadan
 {
-    /// <inheritdoc cref="VCRCMitsubishiZubadan"/>
+    /// <inheritdoc cref="VCRCMitsubishiZubadan" />
     /// <param name="evaporator">Evaporator.</param>
     /// <param name="compressor">Compressor.</param>
     /// <param name="condenser">Condenser.</param>
@@ -11,19 +11,19 @@ public class VCRCMitsubishiZubadan : AbstractTwoStageVCRC, IVCRCMitsubishiZubada
     /// <exception cref="ArgumentException">Solution not found!</exception>
     /// <exception cref="ValidationException">Only one refrigerant should be selected!</exception>
     /// <exception cref="ValidationException">
-    ///     Condensing temperature should be greater than evaporating temperature!
+    /// Condensing temperature should be greater than evaporating temperature!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     There should be a two-phase refrigerant at the recuperator 'hot' inlet!
+    /// There should be a two-phase refrigerant at the recuperator 'hot' inlet!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Wrong temperature difference at the recuperator 'hot' side!
+    /// Wrong temperature difference at the recuperator 'hot' side!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Wrong temperature difference at the recuperator 'cold' side!
+    /// Wrong temperature difference at the recuperator 'cold' side!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Too high temperature difference at the economizer 'cold' side!
+    /// Too high temperature difference at the economizer 'cold' side!
     /// </exception>
     public VCRCMitsubishiZubadan(
         IEvaporator evaporator,

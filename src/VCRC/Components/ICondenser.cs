@@ -1,12 +1,12 @@
 ﻿namespace VCRC;
 
 /// <summary>
-///     Condenser.
+/// Condenser.
 /// </summary>
 public interface ICondenser : IHeatReleaser
 {
     /// <summary>
-    ///     Subcooling.
+    /// Subcooling.
     /// </summary>
     TemperatureDelta Subcooling { get; }
 }

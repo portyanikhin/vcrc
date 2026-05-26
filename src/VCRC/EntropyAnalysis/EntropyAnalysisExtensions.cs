@@ -1,12 +1,12 @@
 ﻿namespace VCRC;
 
 /// <summary>
-///     Entropy analysis extension methods.
+/// Entropy analysis extension methods.
 /// </summary>
 public static class EntropyAnalysisExtensions
 {
     /// <summary>
-    ///     Performs VCRC entropy analysis over a range of indoor and outdoor temperatures.
+    /// Performs VCRC entropy analysis over a range of indoor and outdoor temperatures.
     /// </summary>
     /// <param name="cycles">Enumerable of VCRCs.</param>
     /// <param name="indoor">Enumerable of indoor temperatures.</param>
@@ -30,7 +30,7 @@ public static class EntropyAnalysisExtensions
     }
 
     /// <summary>
-    ///     Computes the average of the entropy analysis results.
+    /// Computes the average of the entropy analysis results.
     /// </summary>
     /// <param name="results">Enumerable of the entropy analysis results.</param>
     /// <returns>The average.</returns>

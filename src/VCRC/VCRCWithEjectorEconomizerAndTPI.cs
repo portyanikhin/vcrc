@@ -1,6 +1,6 @@
 ﻿namespace VCRC;
 
-/// <inheritdoc cref="IVCRCWithEjectorEconomizerAndTPI"/>
+/// <inheritdoc cref="IVCRCWithEjectorEconomizerAndTPI" />
 public class VCRCWithEjectorEconomizerAndTPI
     : AbstractTwoStageVCRC,
         IVCRCWithEjectorEconomizerAndTPI
@@ -8,7 +8,7 @@ public class VCRCWithEjectorEconomizerAndTPI
     private Pressure _diffuserOutletPressure;
     private IEjectorFlows _ejectorFlows = default!;
 
-    /// <inheritdoc cref="VCRCWithEjectorEconomizerAndTPI"/>
+    /// <inheritdoc cref="VCRCWithEjectorEconomizerAndTPI" />
     /// <param name="evaporator">Evaporator.</param>
     /// <param name="compressor">Compressor.</param>
     /// <param name="heatReleaser">Condenser or gas cooler.</param>
@@ -16,13 +16,13 @@ public class VCRCWithEjectorEconomizerAndTPI
     /// <param name="economizer">Economizer.</param>
     /// <exception cref="ValidationException">Only one refrigerant should be selected!</exception>
     /// <exception cref="ValidationException">
-    ///     Condensing temperature should be greater than evaporating temperature!
+    /// Condensing temperature should be greater than evaporating temperature!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Refrigerant should be a single component or an azeotropic blend!
+    /// Refrigerant should be a single component or an azeotropic blend!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Too high temperature difference at the economizer 'cold' side!
+    /// Too high temperature difference at the economizer 'cold' side!
     /// </exception>
     public VCRCWithEjectorEconomizerAndTPI(
         IEvaporator evaporator,

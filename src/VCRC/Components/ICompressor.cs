@@ -1,12 +1,12 @@
 ﻿namespace VCRC;
 
 /// <summary>
-///     Compressor.
+/// Compressor.
 /// </summary>
 public interface ICompressor
 {
     /// <summary>
-    ///     Isentropic efficiency.
+    /// Isentropic efficiency.
     /// </summary>
     Ratio Efficiency { get; }
 }

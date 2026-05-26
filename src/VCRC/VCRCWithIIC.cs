@@ -1,18 +1,18 @@
 ﻿namespace VCRC;
 
-/// <inheritdoc cref="IVCRCWithIIC"/>
+/// <inheritdoc cref="IVCRCWithIIC" />
 public class VCRCWithIIC : AbstractTwoStageVCRC, IVCRCWithIIC
 {
-    /// <inheritdoc cref="VCRCWithIIC"/>
+    /// <inheritdoc cref="VCRCWithIIC" />
     /// <param name="evaporator">Evaporator.</param>
     /// <param name="compressor">Compressor.</param>
     /// <param name="heatReleaser">Condenser or gas cooler.</param>
     /// <exception cref="ValidationException">Only one refrigerant should be selected!</exception>
     /// <exception cref="ValidationException">
-    ///     Condensing temperature should be greater than evaporating temperature!
+    /// Condensing temperature should be greater than evaporating temperature!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Refrigerant should be a single component or an azeotropic blend!
+    /// Refrigerant should be a single component or an azeotropic blend!
     /// </exception>
     public VCRCWithIIC(IEvaporator evaporator, ICompressor compressor, IHeatReleaser heatReleaser)
         : base(evaporator, compressor, heatReleaser)

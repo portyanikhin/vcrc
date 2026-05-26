@@ -1,15 +1,15 @@
 ﻿namespace VCRC;
 
-/// <inheritdoc cref="ITwoStageVCRC"/>
+/// <inheritdoc cref="ITwoStageVCRC" />
 public abstract class AbstractTwoStageVCRC : AbstractVCRC, ITwoStageVCRC
 {
-    /// <inheritdoc cref="AbstractTwoStageVCRC"/>
+    /// <inheritdoc cref="AbstractTwoStageVCRC" />
     /// <param name="evaporator">Evaporator.</param>
     /// <param name="compressor">Compressor.</param>
     /// <param name="heatReleaser">Condenser or gas cooler.</param>
     /// <exception cref="ValidationException">Only one refrigerant should be selected!</exception>
     /// <exception cref="ValidationException">
-    ///     Condensing temperature should be greater than evaporating temperature!
+    /// Condensing temperature should be greater than evaporating temperature!
     /// </exception>
     protected AbstractTwoStageVCRC(
         IEvaporator evaporator,

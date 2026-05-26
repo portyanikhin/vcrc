@@ -1,42 +1,42 @@
 ﻿namespace VCRC;
 
 /// <summary>
-///     Ejector flows.
+/// Ejector flows.
 /// </summary>
 public interface IEjectorFlows
 {
     /// <summary>
-    ///     Nozzle inlet.
+    /// Nozzle inlet.
     /// </summary>
     IRefrigerant NozzleInlet { get; }
 
     /// <summary>
-    ///     Suction section inlet.
+    /// Suction section inlet.
     /// </summary>
     IRefrigerant SuctionInlet { get; }
 
     /// <summary>
-    ///     Mixing section inlet.
+    /// Mixing section inlet.
     /// </summary>
     IRefrigerant MixingInlet { get; }
 
     /// <summary>
-    ///     Nozzle outlet.
+    /// Nozzle outlet.
     /// </summary>
     IRefrigerant NozzleOutlet { get; }
 
     /// <summary>
-    ///     Suction section outlet.
+    /// Suction section outlet.
     /// </summary>
     IRefrigerant SuctionOutlet { get; }
 
     /// <summary>
-    ///     Diffuser outlet.
+    /// Diffuser outlet.
     /// </summary>
     IRefrigerant DiffuserOutlet { get; }
 
     /// <summary>
-    ///     Flow ratio.
+    /// Flow ratio.
     /// </summary>
     Ratio FlowRatio { get; }
 }

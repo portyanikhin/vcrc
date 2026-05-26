@@ -1,36 +1,36 @@
 ﻿namespace VCRC;
 
-/// <inheritdoc cref="IEjector"/>
+/// <inheritdoc cref="IEjector" />
 public record Ejector : IEjector
 {
-    /// <inheritdoc cref="Ejector"/>
+    /// <inheritdoc cref="Ejector" />
     /// <param name="efficiency">
-    ///     Isentropic efficiency of the nozzle, suction section and diffuser.
+    /// Isentropic efficiency of the nozzle, suction section and diffuser.
     /// </param>
     /// <exception cref="ValidationException">
-    ///     Isentropic efficiency of the nozzle should be in (0;100) %!
+    /// Isentropic efficiency of the nozzle should be in (0;100) %!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Isentropic efficiency of the suction section should be in (0;100) %!
+    /// Isentropic efficiency of the suction section should be in (0;100) %!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Isentropic efficiency of the diffuser should be in (0;100) %!
+    /// Isentropic efficiency of the diffuser should be in (0;100) %!
     /// </exception>
     public Ejector(Ratio efficiency)
         : this(efficiency, efficiency, efficiency) { }
 
-    /// <inheritdoc cref="Ejector"/>
+    /// <inheritdoc cref="Ejector" />
     /// <param name="nozzleEfficiency">Isentropic efficiency of the nozzle.</param>
     /// <param name="suctionEfficiency">Isentropic efficiency of the suction section.</param>
     /// <param name="diffuserEfficiency">Isentropic efficiency of the diffuser.</param>
     /// <exception cref="ValidationException">
-    ///     Isentropic efficiency of the nozzle should be in (0;100) %!
+    /// Isentropic efficiency of the nozzle should be in (0;100) %!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Isentropic efficiency of the suction section should be in (0;100) %!
+    /// Isentropic efficiency of the suction section should be in (0;100) %!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Isentropic efficiency of the diffuser should be in (0;100) %!
+    /// Isentropic efficiency of the diffuser should be in (0;100) %!
     /// </exception>
     public Ejector(Ratio nozzleEfficiency, Ratio suctionEfficiency, Ratio diffuserEfficiency)
     {

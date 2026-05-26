@@ -3,33 +3,33 @@
 namespace VCRC;
 
 /// <summary>
-///     Gas cooler.
+/// Gas cooler.
 /// </summary>
 public record GasCooler : IHeatReleaser
 {
-    /// <inheritdoc cref="GasCooler"/>
+    /// <inheritdoc cref="GasCooler" />
     /// <remarks>
-    ///     For R744, the absolute pressure in the gas cooler is optional. If it is not specified,
-    ///     then the optimal pressure ill be calculated automatically in accordance
-    ///     with this literary source:
-    ///     <i>
-    ///         Yang L. et al. Minimizing COP loss from optional
-    ///         high pressure correlation for transcritical CO2 cycle //
-    ///         Applied Thermal Engineering. – 2015. – V. 89. – P. 656-662.
-    ///     </i>
+    /// For R744, the absolute pressure in the gas cooler is optional. If it is not specified,
+    /// then the optimal pressure ill be calculated automatically in accordance
+    /// with this literary source:
+    /// <i>
+    /// Yang L. et al. Minimizing COP loss from optional
+    /// high pressure correlation for transcritical CO2 cycle //
+    /// Applied Thermal Engineering. – 2015. – V. 89. – P. 656-662.
+    /// </i>
     /// </remarks>
     /// <param name="refrigerantName">Selected refrigerant name.</param>
     /// <param name="outletTemperature">Gas cooler outlet temperature.</param>
     /// <param name="pressure">Gas cooler absolute pressure (optional for R744).</param>
     /// <exception cref="ArgumentException">
-    ///     It is impossible to automatically calculate the absolute pressure in the gas cooler!
-    ///     It is necessary to define it.
+    /// It is impossible to automatically calculate the absolute pressure in the gas cooler!
+    /// It is necessary to define it.
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Gas cooler outlet temperature should be greater than <c>{CriticalTemperature}</c> °C!
+    /// Gas cooler outlet temperature should be greater than <c>{CriticalTemperature}</c> °C!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Gas cooler absolute pressure should be greater than <c>{CriticalPressure}</c> MPa!
+    /// Gas cooler absolute pressure should be greater than <c>{CriticalPressure}</c> MPa!
     /// </exception>
     public GasCooler(
         FluidsList refrigerantName,

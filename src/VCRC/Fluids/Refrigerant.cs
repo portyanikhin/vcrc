@@ -1,14 +1,14 @@
-using UnitsNet.NumberExtensions.NumberToTemperatureDelta;
+﻿using UnitsNet.NumberExtensions.NumberToTemperatureDelta;
 
 namespace VCRC;
 
-/// <inheritdoc cref="IRefrigerant"/>
+/// <inheritdoc cref="IRefrigerant" />
 public class Refrigerant : Fluid, IRefrigerant
 {
-    /// <inheritdoc cref="Refrigerant"/>
+    /// <inheritdoc cref="Refrigerant" />
     /// <param name="name">Selected refrigerant name.</param>
     /// <exception cref="ValidationException">
-    ///     The selected fluid is not a refrigerant (its name should start with 'R')!
+    /// The selected fluid is not a refrigerant (its name should start with 'R')!
     /// </exception>
     public Refrigerant(FluidsList name)
         : base(name) => new RefrigerantValidator().ValidateAndThrow(this);

@@ -1,15 +1,15 @@
 ﻿namespace VCRC;
 
-/// <inheritdoc cref="IEjectorFlows"/>
+/// <inheritdoc cref="IEjectorFlows" />
 public class EjectorFlows : IEjectorFlows
 {
-    /// <inheritdoc cref="EjectorFlows"/>
+    /// <inheritdoc cref="EjectorFlows" />
     /// <param name="ejector">Ejector.</param>
     /// <param name="nozzleInlet">Nozzle inlet.</param>
     /// <param name="suctionInlet">Suction section inlet.</param>
     /// <exception cref="ValidationException">Only one refrigerant should be selected!</exception>
     /// <exception cref="ValidationException">
-    ///     Ejector nozzle inlet pressure should be greater than suction inlet pressure!
+    /// Ejector nozzle inlet pressure should be greater than suction inlet pressure!
     /// </exception>
     public EjectorFlows(IEjector ejector, IRefrigerant nozzleInlet, IRefrigerant suctionInlet)
     {

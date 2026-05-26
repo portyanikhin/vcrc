@@ -1,12 +1,12 @@
 ﻿namespace VCRC;
 
 /// <summary>
-///     Evaporator.
+/// Evaporator.
 /// </summary>
 public interface IEvaporator : IMainHeatExchanger
 {
     /// <summary>
-    ///     Superheat.
+    /// Superheat.
     /// </summary>
     TemperatureDelta Superheat { get; }
 }

@@ -1,18 +1,17 @@
 ﻿namespace VCRC;
 
-/// <inheritdoc cref="ICondenser"/>
+/// <inheritdoc cref="ICondenser" />
 public record Condenser : ICondenser
 {
-    /// <inheritdoc cref="Condenser"/>
+    /// <inheritdoc cref="Condenser" />
     /// <param name="refrigerantName">Selected refrigerant name.</param>
     /// <param name="temperature">Condensing temperature (bubble point).</param>
     /// <param name="subcooling">Subcooling.</param>
     /// <exception cref="ValidationException">
-    ///     Condensing temperature should be in
-    ///     <c>({TripleTemperature};{CriticalTemperature})</c> °C!
+    /// Condensing temperature should be in <c>({TripleTemperature};{CriticalTemperature})</c> °C!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Subcooling in the condenser should be in [0;50] K!
+    /// Subcooling in the condenser should be in [0;50] K!
     /// </exception>
     public Condenser(
         FluidsList refrigerantName,

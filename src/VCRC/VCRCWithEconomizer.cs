@@ -1,22 +1,22 @@
 ﻿namespace VCRC;
 
-/// <inheritdoc cref="IVCRCWithEconomizer"/>
+/// <inheritdoc cref="IVCRCWithEconomizer" />
 public class VCRCWithEconomizer : AbstractTwoStageVCRC, IVCRCWithEconomizer
 {
-    /// <inheritdoc cref="IVCRCWithEconomizer"/>
+    /// <inheritdoc cref="IVCRCWithEconomizer" />
     /// <param name="evaporator">Evaporator.</param>
     /// <param name="compressor">Compressor.</param>
     /// <param name="heatReleaser">Condenser or gas cooler.</param>
     /// <param name="economizer">Economizer.</param>
     /// <exception cref="ValidationException">Only one refrigerant should be selected!</exception>
     /// <exception cref="ValidationException">
-    ///     Condensing temperature should be greater than evaporating temperature!
+    /// Condensing temperature should be greater than evaporating temperature!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Wrong temperature difference at the economizer 'hot' side!
+    /// Wrong temperature difference at the economizer 'hot' side!
     /// </exception>
     /// <exception cref="ValidationException">
-    ///     Too high temperature difference at the economizer 'cold' side!
+    /// Too high temperature difference at the economizer 'cold' side!
     /// </exception>
     public VCRCWithEconomizer(
         IEvaporator evaporator,
