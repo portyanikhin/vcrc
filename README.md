@@ -10,6 +10,7 @@ Vapor-compression refrigeration cycles analysis tool
 ## Navigation
 
 - [How to install](#how-to-install)
+- [Supported platforms](#supported-platforms)
 - [Unit safety](#unit-safety)
 - [VCRC components](#vcrc-components)
     - [Evaporator](#evaporator)
@@ -45,6 +46,15 @@ dotnet add package VCRC
 ```
 
 Or go to [NuGet Gallery | VCRC](https://www.nuget.org/packages/vcrc) for detailed instructions.
+
+## Supported platforms
+
+- `Linux AArch64`
+- `Linux x86-64`
+- `macOS AArch64`
+- `macOS x86-64`
+- `Windows AArch64`
+- `Windows x86-64`
 
 ## Unit safety
 
