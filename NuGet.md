@@ -6,4 +6,3 @@
 [![codecov](https://img.shields.io/codecov/c/github/portyanikhin/vcrc?style=for-the-badge&logo=codecov&label=codecov&labelColor=555555)](https://app.codecov.io/gh/portyanikhin/vcrc)
 
 Vapor-compression refrigeration cycles analysis tool using
-[SharpProp](https://github.com/portyanikhin/sharpprop)
