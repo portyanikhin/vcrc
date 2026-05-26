@@ -34,6 +34,7 @@ Vapor-compression refrigeration cycles analysis tool
 - [Two-stage VCRC with an ejector as an expansion device, economizer and two-phase injection into the compressor](#two-stage-vcrc-with-an-ejector-as-an-expansion-device-economizer-and-two-phase-injection-into-the-compressor)
 - [Mitsubishi Zubadan VCRC (subcritical only)](#mitsubishi-zubadan-vcrc-subcritical-only)
 - [Entropy analysis](#entropy-analysis)
+- [License](#license)
 
 ## How to install
 
@@ -1410,3 +1411,10 @@ Console.WriteLine(result.AnalysisRelativeError);          // 1.27e-13 %
 
 In addition, you can perform entropy analysis in the range of indoor and outdoor temperatures
 ([see an example](https://github.com/portyanikhin/vcrc/blob/main/tests/Vcrc.Tests/EntropyAnalysis/EntropyAnalysisExtensionsTests.cs)).
+
+#### License
+
+<sup>
+This project is licensed under
+<a href="https://github.com/portyanikhin/sharpprop/blob/main/LICENSE">MIT License</a>.
+</sup>
