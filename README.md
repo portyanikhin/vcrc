@@ -5,8 +5,7 @@
 [<img alt="CI" src="https://img.shields.io/github/actions/workflow/status/portyanikhin/vcrc/ci.yml?style=for-the-badge&logo=githubactions&logoColor=ffffff&label=ci&labelColor=555555" height="22">](https://github.com/portyanikhin/vcrc/actions/workflows/ci.yml)
 [<img alt="codecov" src="https://img.shields.io/codecov/c/github/portyanikhin/vcrc?style=for-the-badge&logo=codecov&label=codecov&labelColor=555555" height="22">](https://app.codecov.io/gh/portyanikhin/vcrc)
 
-Vapor-compression refrigeration cycles analysis tool using
-[SharpProp](https://github.com/portyanikhin/sharpprop)
+Vapor-compression refrigeration cycles analysis tool
 
 ## Navigation
 
