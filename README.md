@@ -64,7 +64,7 @@ For example:
 - Evaporating temperature (dew point): _5 °C_.
 - Superheat: _5 K_.
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToTemperature;
@@ -81,7 +81,7 @@ var evaporator = new Evaporator(
 
 Compressor with _80 %_ isentropic efficiency:
 
-```c#
+```csharp
 using UnitsNet.NumberExtensions.NumberToRatio;
 using VCRC;
 
@@ -96,7 +96,7 @@ For example:
 - Condensing temperature (bubble point): _45 °C_.
 - Subcooling: _3 K_.
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToTemperature;
@@ -124,7 +124,7 @@ For example:
 - Outlet temperature: _40 °C_.
 - Pressure (optional for R744): _105 bar_.
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet.NumberExtensions.NumberToPressure;
 using UnitsNet.NumberExtensions.NumberToTemperature;
@@ -144,7 +144,7 @@ Console.WriteLine(gasCoolerWithSpecifiedPressure.Pressure.Bars); // 105
 
 Ejector with _90 %_ isentropic efficiency of the nozzle, suction section and diffuser:
 
-```c#
+```csharp
 using UnitsNet.NumberExtensions.NumberToRatio;
 using VCRC;
 
@@ -154,7 +154,7 @@ var ejector = new Ejector(90.Percent());
 Ejector with _90 %_ isentropic efficiency of the nozzle and suction section and
 _80 %_ isentropic efficiency of the diffuser:
 
-```c#
+```csharp
 using UnitsNet.NumberExtensions.NumberToRatio;
 using VCRC;
 
@@ -165,7 +165,7 @@ var ejector = new Ejector(90.Percent(), 90.Percent(), 80.Percent());
 
 Recuperator with _5 K_ temperature difference at "hot" side:
 
-```c#
+```csharp
 using UnitsNet;
 using VCRC;
 
@@ -176,7 +176,7 @@ var recuperator = new Recuperator(TemperatureDelta.FromKelvins(5));
 
 Economizer with _5 K_ temperature difference at "cold" side and _5 K_ superheat:
 
-```c#
+```csharp
 using UnitsNet;
 using VCRC;
 
@@ -190,7 +190,7 @@ var economizer = new Economizer(
 
 Economizer with two-phase injection to the compressor and _5 K_ temperature difference at "cold" side:
 
-```c#
+```csharp
 using UnitsNet;
 using VCRC;
 
@@ -224,7 +224,7 @@ the coefficient of performance (aka heating coefficient, aka COP) and the compre
 
 **_For the subcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -250,7 +250,7 @@ Console.WriteLine(cycle.Point2.Temperature); // 88.76 °C
 
 **_For the transcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -299,7 +299,7 @@ the coefficient of performance (aka heating coefficient, aka COP) and the compre
 
 **_For the subcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -331,7 +331,7 @@ Console.WriteLine(cycle.Point3.Temperature); // 120.68 °C
 
 **_For the transcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -390,7 +390,7 @@ the coefficient of performance (aka heating coefficient, aka COP) and the compre
 
 **_For the subcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -417,7 +417,7 @@ Console.WriteLine(cycle.Point4.Temperature); // 85.53 °C
 
 **_For the transcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -470,7 +470,7 @@ the coefficient of performance (aka heating coefficient, aka COP) and the compre
 
 **_For the subcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -497,7 +497,7 @@ Console.WriteLine(cycle.Point4.Temperature); // 62.48 °C
 
 **_For the transcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -551,7 +551,7 @@ the coefficient of performance (aka heating coefficient, aka COP) and the compre
 
 **_For the subcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -578,7 +578,7 @@ Console.WriteLine(cycle.Point4.Temperature); // 62.48 °C
 
 **_For the transcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -632,7 +632,7 @@ the coefficient of performance (aka heating coefficient, aka COP) and the compre
 
 **_For the subcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -668,7 +668,7 @@ Console.WriteLine(cycle.Point4.Temperature); // 87.14 °C
 
 **_For the transcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -731,7 +731,7 @@ the coefficient of performance (aka heating coefficient, aka COP) and the compre
 
 **_For the subcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -767,7 +767,7 @@ Console.WriteLine(cycle.Point4.Temperature); // 68.27 °C
 
 **_For the transcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -830,7 +830,7 @@ the coefficient of performance (aka heating coefficient, aka COP) and the compre
 
 **_For the subcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -866,7 +866,7 @@ Console.WriteLine(cycle.Point4.Temperature); // 62.48 °C
 
 **_For the transcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -929,7 +929,7 @@ the coefficient of performance (aka heating coefficient, aka COP) and the compre
 
 **_For the subcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -956,7 +956,7 @@ Console.WriteLine(cycle.Point2.Temperature); // 79.05 °C
 
 **_For the transcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -1016,7 +1016,7 @@ the coefficient of performance (aka heating coefficient, aka COP) and the compre
 
 **_For the subcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -1054,7 +1054,7 @@ Console.WriteLine(cycle.Point4.Temperature); // 79.97 °C
 
 **_For the transcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -1125,7 +1125,7 @@ the coefficient of performance (aka heating coefficient, aka COP) and the compre
 
 **_For the subcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -1163,7 +1163,7 @@ Console.WriteLine(cycle.Point4.Temperature); // 67.52 °C
 
 **_For the transcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -1234,7 +1234,7 @@ the coefficient of performance (aka heating coefficient, aka COP) and the compre
 
 **_For the subcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -1269,7 +1269,7 @@ Console.WriteLine(cycle.Point4.Temperature); // 61.76 °C
 
 **_For the transcritical cycle_**
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -1330,7 +1330,7 @@ Console.WriteLine(cycle.Point4.Temperature); // 52.59 °C
 To calculate the energy efficiency ratio (aka cooling coefficient, aka EER),
 the coefficient of performance (aka heating coefficient, aka COP) and the compressor discharge temperatures:
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
@@ -1371,7 +1371,7 @@ in each part of the refrigeration cycle and make decisions that will help increa
 
 For example, simple single-stage VCRC, _18 °C_ indoor temperature, _35 °C_ outdoor temperature:
 
-```c#
+```csharp
 using SharpProp;
 using UnitsNet;
 using UnitsNet.NumberExtensions.NumberToRatio;
