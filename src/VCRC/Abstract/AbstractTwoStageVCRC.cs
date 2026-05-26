@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 /// <inheritdoc cref="ITwoStageVCRC" />
 public abstract class AbstractTwoStageVCRC : AbstractVCRC, ITwoStageVCRC

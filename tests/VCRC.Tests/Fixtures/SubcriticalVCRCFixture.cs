@@ -1,4 +1,4 @@
-﻿// ReSharper disable All
+// ReSharper disable All
 
 using UnitsNet.NumberExtensions.NumberToTemperature;
 

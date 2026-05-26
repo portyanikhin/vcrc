@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 /// <inheritdoc cref="IEntropyAnalysisResult" />
 /// <param name="ThermodynamicPerfection">

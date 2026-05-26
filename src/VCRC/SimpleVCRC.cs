@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 /// <inheritdoc cref="ISimpleVCRC" />
 public class SimpleVCRC : AbstractVCRC, ISimpleVCRC

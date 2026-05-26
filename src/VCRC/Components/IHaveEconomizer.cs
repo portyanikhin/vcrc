@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 /// <summary>
 /// VCRC, which includes an economizer.

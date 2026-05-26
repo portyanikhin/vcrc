@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 /// <inheritdoc cref="IEconomizer" />
 public record Economizer : EconomizerWithTPI, IEconomizer

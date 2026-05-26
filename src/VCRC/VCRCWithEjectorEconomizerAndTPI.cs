@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 /// <inheritdoc cref="IVCRCWithEjectorEconomizerAndTPI" />
 public class VCRCWithEjectorEconomizerAndTPI

@@ -1,4 +1,4 @@
-﻿namespace VCRC.Tests;
+namespace VCRC.Tests;
 
 public sealed class VCRCWithEconomizerAndTPISubcriticalTests(
     ComparisonFixture comparison,

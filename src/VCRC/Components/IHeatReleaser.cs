@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 /// <summary>
 /// Heat releaser (condenser or gas cooler).

@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 /// <inheritdoc cref="IVCRCWithEjector" />
 public class VCRCWithEjector : AbstractVCRC, IVCRCWithEjector

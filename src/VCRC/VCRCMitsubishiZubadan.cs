@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 /// <inheritdoc cref="IVCRCMitsubishiZubadan" />
 public class VCRCMitsubishiZubadan : AbstractTwoStageVCRC, IVCRCMitsubishiZubadan

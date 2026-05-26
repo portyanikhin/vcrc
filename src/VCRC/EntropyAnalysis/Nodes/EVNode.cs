@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 internal sealed class EVNode(Ratio specificMassFlow, IRefrigerant inlet, IRefrigerant outlet)
     : IEntropyAnalysisNode

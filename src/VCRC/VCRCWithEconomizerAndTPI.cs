@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 /// <inheritdoc cref="IVCRCWithEconomizerAndTPI" />
 public class VCRCWithEconomizerAndTPI : AbstractTwoStageVCRC, IVCRCWithEconomizerAndTPI

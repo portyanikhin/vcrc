@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 #pragma warning disable CA1866
 internal sealed class RefrigerantValidator : AbstractValidator<IRefrigerant>

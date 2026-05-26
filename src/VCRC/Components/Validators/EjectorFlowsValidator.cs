@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 internal sealed class EjectorFlowsValidator : AbstractValidator<IEjectorFlows>
 {

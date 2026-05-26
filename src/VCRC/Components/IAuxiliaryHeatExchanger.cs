@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 /// <summary>
 /// Auxiliary heat exchanger (economizer or recuperator).

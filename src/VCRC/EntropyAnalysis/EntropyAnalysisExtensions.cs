@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 /// <summary>
 /// Entropy analysis extension methods.

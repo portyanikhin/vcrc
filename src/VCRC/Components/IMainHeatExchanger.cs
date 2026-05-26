@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 /// <summary>
 /// Main heat exchanger (evaporator, condenser or gas cooler).

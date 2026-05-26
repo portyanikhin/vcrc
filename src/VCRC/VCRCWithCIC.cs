@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 /// <inheritdoc cref="IVCRCWithCIC" />
 public class VCRCWithCIC : AbstractTwoStageVCRC, IVCRCWithCIC

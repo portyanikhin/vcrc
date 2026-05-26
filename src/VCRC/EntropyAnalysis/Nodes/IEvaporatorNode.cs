@@ -1,4 +1,4 @@
-﻿namespace VCRC;
+namespace VCRC;
 
 internal interface IEvaporatorNode : IMainHeatExchangerNode
 {

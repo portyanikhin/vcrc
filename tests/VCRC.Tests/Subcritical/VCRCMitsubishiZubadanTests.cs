@@ -1,4 +1,4 @@
-﻿using UnitsNet.NumberExtensions.NumberToTemperature;
+using UnitsNet.NumberExtensions.NumberToTemperature;
 
 namespace VCRC.Tests;
 
