@@ -1,4 +1,4 @@
-# ![VCRC](https://raw.githubusercontent.com/portyanikhin/VCRC/main/images/header.png)
+# VCRC
 
 [![Build & Tests](https://github.com/portyanikhin/VCRC/actions/workflows/build-and-tests.yml/badge.svg)](https://github.com/portyanikhin/VCRC/actions/workflows/build-and-tests.yml)
 [![CodeQL](https://github.com/portyanikhin/VCRC/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/portyanikhin/VCRC/actions/workflows/codeql-analysis.yml)
@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/github/license/portyanikhin/VCRC)](https://github.com/portyanikhin/VCRC/blob/main/LICENSE)
 [![codecov](https://codecov.io/gh/portyanikhin/VCRC/branch/main/graph/badge.svg?token=aJmrRHNQnS)](https://codecov.io/gh/portyanikhin/VCRC)
 
-Cross-platform vapor-compression refrigeration cycles analysis tool using 
+Cross-platform vapor-compression refrigeration cycles analysis tool using
 [SharpProp](https://github.com/portyanikhin/SharpProp).
 
 ## Navigation
@@ -159,7 +159,7 @@ using VCRC;
 var ejector = new Ejector(90.Percent());
 ```
 
-Ejector with _90 %_ isentropic efficiency of the nozzle and suction section and 
+Ejector with _90 %_ isentropic efficiency of the nozzle and suction section and
 _80 %_ isentropic efficiency of the diffuser:
 
 ```c#
