@@ -37,18 +37,13 @@ Vapor-compression refrigeration cycles analysis tool
 
 ## How to install
 
-Add it via CLI (you also need to explicitly add [SharpProp](https://github.com/portyanikhin/SharpProp)):
-
-```shell
-dotnet add package SharpProp
-```
+Add it via CLI:
 
 ```shell
 dotnet add package VCRC
 ```
 
-Or go to [NuGet Gallery | SharpProp](https://www.nuget.org/packages/SharpProp)
-and [NuGet Gallery | VCRC](https://www.nuget.org/packages/vcrc) for detailed instructions.
+Or go to [NuGet Gallery | VCRC](https://www.nuget.org/packages/vcrc) for detailed instructions.
 
 ## Unit safety
 
