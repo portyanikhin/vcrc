@@ -1,0 +1,18 @@
+{
+  "allowCompoundWords": true,
+  "language": "en",
+  "dictionaries": ["csharp", "dotnet"],
+  "words": [
+    "analysable",
+    "azeotropic",
+    "isenthalpic",
+    "ivcrc",
+    "portyanikhin",
+    "raphson",
+    "unspecify",
+    "vcrc",
+    "xunit",
+    "zeotropic",
+    "zubadan"
+  ]
+}
