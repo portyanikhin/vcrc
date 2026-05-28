@@ -38,18 +38,18 @@ public static class EntropyAnalysisExtensions
     {
         var resultsList = results.ToList();
         return new EntropyAnalysisResult(
-            resultsList.Select(i => i.ThermodynamicPerfection.Percent).Average().Percent(),
-            resultsList.Select(i => i.MinSpecificWorkRatio.Percent).Average().Percent(),
-            resultsList.Select(i => i.CompressorEnergyLossRatio.Percent).Average().Percent(),
-            resultsList.Select(i => i.CondenserEnergyLossRatio.Percent).Average().Percent(),
-            resultsList.Select(i => i.GasCoolerEnergyLossRatio.Percent).Average().Percent(),
-            resultsList.Select(i => i.ExpansionValvesEnergyLossRatio.Percent).Average().Percent(),
-            resultsList.Select(i => i.EjectorEnergyLossRatio.Percent).Average().Percent(),
-            resultsList.Select(i => i.EvaporatorEnergyLossRatio.Percent).Average().Percent(),
-            resultsList.Select(i => i.RecuperatorEnergyLossRatio.Percent).Average().Percent(),
-            resultsList.Select(i => i.EconomizerEnergyLossRatio.Percent).Average().Percent(),
-            resultsList.Select(i => i.MixingEnergyLossRatio.Percent).Average().Percent(),
-            resultsList.Select(i => i.AnalysisRelativeError.Percent).Average().Percent()
+            resultsList.Average(i => i.ThermodynamicPerfection.Percent).Percent(),
+            resultsList.Average(i => i.MinSpecificWorkRatio.Percent).Percent(),
+            resultsList.Average(i => i.CompressorEnergyLossRatio.Percent).Percent(),
+            resultsList.Average(i => i.CondenserEnergyLossRatio.Percent).Percent(),
+            resultsList.Average(i => i.GasCoolerEnergyLossRatio.Percent).Percent(),
+            resultsList.Average(i => i.ExpansionValvesEnergyLossRatio.Percent).Percent(),
+            resultsList.Average(i => i.EjectorEnergyLossRatio.Percent).Percent(),
+            resultsList.Average(i => i.EvaporatorEnergyLossRatio.Percent).Percent(),
+            resultsList.Average(i => i.RecuperatorEnergyLossRatio.Percent).Percent(),
+            resultsList.Average(i => i.EconomizerEnergyLossRatio.Percent).Percent(),
+            resultsList.Average(i => i.MixingEnergyLossRatio.Percent).Percent(),
+            resultsList.Average(i => i.AnalysisRelativeError.Percent).Percent()
         );
     }
 }
