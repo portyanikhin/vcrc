@@ -1,6 +1,5 @@
 namespace VCRC;
 
-#pragma warning disable CA1866
 internal sealed class RefrigerantValidator : AbstractValidator<IRefrigerant>
 {
     public RefrigerantValidator() =>
@@ -10,4 +9,3 @@ internal sealed class RefrigerantValidator : AbstractValidator<IRefrigerant>
                 "The selected fluid is not a refrigerant (its name should start with 'R')!"
             );
 }
-#pragma warning restore CA1866
