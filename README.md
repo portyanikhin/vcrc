@@ -1426,5 +1426,5 @@ In addition, you can perform entropy analysis in the range of indoor and outdoor
 
 <sup>
 This project is licensed under
-<a href="https://github.com/portyanikhin/sharpprop/blob/main/LICENSE">MIT License</a>.
+<a href="https://github.com/portyanikhin/sharpprop/blob/main/LICENSE">MIT License</a>
 </sup>
